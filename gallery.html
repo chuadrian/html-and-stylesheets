@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            font-family: cursive;
+            background: rgb(51, 48, 48);
+        }
+        .header{
+            text-align: center;
+            text-transform: uppercase;
+            padding:33px;
+            background-color:white;
+            color:black;
+            border-bottom: 5px solid #fdb347;
+        }
+        .gallery{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap:16px;
+            max-width:1400px;
+            margin: 0 auto;
+            padding:20px 10px;
+        }
+        .gallery img{
+            width:100%;
+            max-width: 350px;
+            height:300px;
+            object-fit: cover;
+            border-radius:12px;
+        }
+        .gallery::after{
+            content: "";
+            width:350px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Hiragi Gallery</h1>
+        <p>A modest few of my drawings</p>
+    </header>
+    <div class="gallery">
+        <img src="Project-20231207085911.jpg" alt="">
+        <img src="Untitled18.png" alt="">
+        <img src="Untitled41-1.png" alt="">
+        <img src="Untitled50.jpg" alt="">
+        <img src="Untitled51.png" alt="">
+        <img src="Untitled52.png" alt="">
+        <img src="Untitled55.png" alt="">
+        <img src="Untitled61.png" alt="">
+        <img src="Untitled62.png" alt="">
+        <img src="Untitled64.png" alt="">
+        <img src="Untitled68.jpg" alt="">
+    </div>
+</body>
+</html>
