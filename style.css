@@ -1,92 +1,127 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.header{
-    background:black;
-    padding: 10px;
-    margin:80px;
-    margin-top:9px;
-    text-align:center;
-    border-radius: 10px 15px 20px 30px;
-    margin-bottom: 25px;
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/10/00/38/creative-7581718_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-.div2{
-    background:rgb(37, 189, 37);
-    display:inline-flex;
-    margin:10px;
-    border-radius: 12px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+header{
+    position: relative;
 }
-h1{
-    color:#f0f8f0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:45px;
+.wrapper{
+    width: 100%;
+    margin: auto;
 }
-p{
-    color:#f0f8f0;
-    font-size: 20px;
-    padding: 10px;
+.menu{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
 }
-.p1{
-    line-height: 40px;
-    border:3px solid rgb(7, 233, 7);
-    width:50%;
-    border-radius: 12px;
+.menu li{
+    display: inline-block;
 }
-.p2{
-    line-height: 45px;
-    border:3px solid rgb(7, 233, 7);
-    margin-left: 3px;
-    border-radius: 12px;
-}
-.border{
-    background: black;
-    margin:10px;
-    text-align: center;
-    border-radius: 15px;
-}
-.options{
-    display: inline-flex;
-    color:#f0f8f0;
-    margin:10px;
-    padding: 10px;
-}
-button{
-    margin-left: 35px;
-    padding:8px;
-    border-radius:9px;
-    background-color: rgb(40, 180, 40);
-    border: solid;
-}
-button:hover{
-    cursor: pointer;
-    font-size: 1.1em;
-}
-
-footer{
-    background-color: rgb(40, 180, 40);
-    line-height: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin:12px;
-    padding:3px;
-    border-radius: 8px 19px 39px 17px;
-    overflow: hidden;
-    padding-bottom: 10px;
-    text-align: center;
-}
-hr{
-    margin:12px;
-    border:solid white 1px;
-}
-.email{
+.menu li a{
+    color: rgb(51, 13, 3);
     text-decoration: none;
-    color:white;
-    font-family:arial;
-    border:1px solid rgb(51, 48, 48);
-    background-color: rgb(51, 48, 48);
-    border-radius: 5px;
-    padding:6px;
-    margin: 6px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu li a:hover{
+    background: rgb(204, 103, 78);
+    color: #000000;
+    border-radius: 10px;
+}
+.logo{
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: rgb(51, 13, 3);
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.text{
+    position: absolute;
+    width:600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.text h1{
+    text-align: center;
+    color:rgb(118, 38, 19);
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 10px;
+    
+}
+.text a{
+    background: rgb(51, 13, 3);
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.text a:hover{
+    background: rgb(204, 103, 78);
+    color:rgb(51, 13, 3);
+}
+.text p{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+@media (max-width:650px){
+    .logo{
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .menu{
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+    .menu li a{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .text{
+        width: 100%;
+        height: 100%;
+        margin: 30% 0;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
