@@ -190,3 +190,17 @@ textarea.info{
     font-family: 'Poppins';
     opacity: 1;
 }
+.back-home{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    background: rgb(136, 31, 5);
+    border-radius: 10px;
+    padding: 10px 20px;
+    float: left;
+    cursor: pointer;
+}
+.back-home:hover{
+    background: rgb(253, 88, 47);
+}
