@@ -49,8 +49,14 @@ header{
     margin-left: 10px;
     color: rgb(51, 13, 3);
     font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: bold;
+}
+.logo:hover{
+    font-size: 1.6rem;
+    background: rgb(204, 103, 78);
+    border-radius: 20%;
+    padding: 1px 1px 1px 1px;
 }
 .text{
     position: absolute;
@@ -124,4 +130,63 @@ header{
     100% {
         opacity: 1;
      }
+}
+
+/*---Contacts Css---*/
+
+.contact-space{
+    padding: 40px 0;
+}
+.contact-space h1{
+    text-align: center;
+    color: #ddd;
+    font-family: 'Poppins';
+}
+.border{
+    width: 100px;
+    height: 10px;
+    background: rgb(51, 13, 3);
+    margin: 40px auto;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.info{
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    border: 0;
+    outline: none;
+    background: rgb(118, 38, 19);
+    padding: 20px 40px;
+    color: white;
+    transition: 0.5s;
+}
+.info:focus{
+    box-shadow: 0 0px 10px 4px rgb(253, 88, 47);
+}
+textarea.info{
+    resize: none;
+    height: 120px;
+}
+.info-btn{
+    float: right;
+    border: solid rgb(192, 53, 18); 
+    border-radius: 10px;
+    color: #fff;
+    padding: 12px 50px;
+    cursor: pointer;
+    background: rgb(136, 31, 5);
+    font-family: 'Poppins';
+}
+.info-btn:hover{
+    background: rgb(253, 88, 47);
+}
+::placeholder {
+    color: white;
+    font-family: 'Poppins';
+    opacity: 1;
 }
