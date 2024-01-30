@@ -3,65 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            margin:0;
-            font-family: cursive;
-            background: rgb(51, 48, 48);
-        }
-        .header{
-            text-align: center;
-            text-transform: uppercase;
-            padding:33px;
-            background-color:white;
-            color:black;
-            border-bottom: 5px solid #fdb347;
-        }
-        .gallery{
-            display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap:16px;
-            max-width:1400px;
-            margin: 0 auto;
-            padding:20px 10px;
-        }
-        .gallery img{
-            width:100%;
-            max-width: 350px;
-            height:300px;
-            object-fit: cover;
-            border-radius:12px;
-        }
-        .gallery::after{
-            content: "";
-            width:350px;
-        }
-    </style>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
+    <title>My Gallery</title>
 </head>
 <body>
-    <header class="header">
-        <h1>Hiragi Gallery</h1>
-        <p>A modest few of my drawings</p>
-    </header>
-    <div class="gallery">
-        <img src="Project-20231207085911.jpg" alt="">
-        <img src="Untitled18.png" alt="">
-        <img src="Untitled41-1.png" alt="">
-        <img src="Untitled50.jpg" alt="">
-        <img src="Untitled51.png" alt="">
-        <img src="Untitled52.png" alt="">
-        <img src="Untitled55.png" alt="">
-        <img src="Untitled61.png" alt="">
-        <img src="Untitled62.png" alt="">
-        <img src="Untitled64.png" alt="">
-        <img src="Untitled68.jpg" alt="">
+    <div class="head">
+        <h2>My Gallery</h2>
+        <p>Below are some of my line art works</p>
     </div>
+   <div class="container">
+    <div class="gallery">
+        <a href="images/Project-20231207085911.jpg" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Project-20231207085911.jpg">
+        </a>
+        <a href="images/Untitled18.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled18.png">
+        </a>
+        <a href="images/Untitled41-1.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled41-1.png">
+        </a>
+        <a href="images/Untitled50.jpg" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled50.jpg">
+        </a>
+        <a href="images/Untitled51.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled51.png">
+        </a>
+        <a href="images/Untitled52.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled52.png">
+        </a>
+        <a href="images/Untitled55.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled55.png">
+        </a>
+        <a href="images/Untitled61.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled61.png">
+        </a>
+        <a href="images/Untitled62.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled62.png">
+        </a>
+        <a href="images/Untitled64.png" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled64.png">
+        </a>
+        <a href="images/Untitled68.jpg" data-lightbox="arts" data-title="Caption1">
+            <img src="images/Untitled68.jpg">
+        </a>
+    </div>
+   </div>
+    <script src="lightbox-plus-jquery.js"></script>
 </body>
 </html>
